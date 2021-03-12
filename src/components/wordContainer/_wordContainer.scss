@@ -1,0 +1,15 @@
+.word-container{
+    //display: flex;
+    // sborder: 1px solid $h_gray1;
+    width: fit-content;
+    margin: 30px;
+    padding: 20px;
+    padding-right: 200px;
+    box-shadow: 2px 2px 0px 0px $h_gray0;
+    -webkit-box-shadow: 2px 2px 0px 0px $h_gray0;
+    -moz-box-shadow: 2px 2px 0px 0px $h_gray0;
+    p{
+        font-size: 14px;
+        padding: 5px 0px;
+    }
+}

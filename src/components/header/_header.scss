@@ -1,0 +1,31 @@
+// This css is for Vocab text, words list text and input search.
+
+.header{
+    height: 100px;
+    background: $h_pink;
+    .vocab-heading{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 10%;    
+        color: $h_white;
+        .search{
+            background: $h_pink;
+            border: 1px solid $h_white;
+            border-radius: 5px;
+            padding: 10px;
+            &:focus{
+                outline: none;
+                box-shadow: 1px 1px 10px grey;
+                border: 1px solid $h_gray1;
+            }
+        }
+    }
+    .wordlist-heading{
+        background: $h_white;
+        padding: 6px;
+        text-align: left;
+        padding-left: 15%;
+        border-radius: 100% 100% 0px 0px;
+        border-bottom: 1px solid $h_gray1;
+    }
+}
