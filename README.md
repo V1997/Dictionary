@@ -1,7 +1,7 @@
 # Setup
 
-## Dictionary
----
+## Dictionary (Directory)
+
 + Make sure you have installed [react js](https://reactjs.org/docs/create-a-new-react-app.html) and [node js](https://nodejs.org/en/download/) if not then download.
 
 + Make sure you had installed [git](https://git-scm.com/).
@@ -29,8 +29,7 @@ Now, you are one step behind to run the project.
 Your react will be running on the port 3000. 
 Enjoy !
 
-## Dictionary API
-***
+## Dictionary API (Directory)
 
 + Go back to your root directory where your dictionary folder is located.
 
