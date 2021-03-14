@@ -48,5 +48,5 @@ Install mongoDb compass if you are using the windows. Then create a database cal
 Now, run this command 
 > node server.js
 
-### This project is underconstruction. feel free to make changes.
+### This project is in underconstruction. feel free to make changes.
 
