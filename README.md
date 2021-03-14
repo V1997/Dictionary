@@ -32,7 +32,7 @@ Enjoy !
 ## Dictionary API
 ***
 
-+ Go back to your root directory where dictionary is located.
++ Go back to your root directory where your dictionary folder is located.
 
 + Just below the dictionary directory just create a folder called directoryAPI.
 
