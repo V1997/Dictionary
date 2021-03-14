@@ -1,0 +1,10 @@
+@import "./theme";
+// Globals
+@import "./common";
+@import "./typography";
+
+@import "../components/header/header";
+@import "../App.scss";
+@import "../components/wordContainer/wordContainer";
+@import "../components/floatingButton/floatingButton";
+@import "../components/wordContainer/popup/popup"

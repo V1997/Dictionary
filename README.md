@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Setup
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Dictionary
+---
++ Make sure you have installed [react js](https://reactjs.org/docs/create-a-new-react-app.html) and [node js](https://nodejs.org/en/download/) if not then download.
 
-## Available Scripts
++ Make sure you had installed [git](https://git-scm.com/).
 
-In the project directory, you can run:
+Now, clone this project from using **git clone** command.
 
-### `npm start`
+now, move to the dictionary directory using the CD command and run **npm install**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+You will be required to install a few depedancies. which are,
+> npm insall node-scss
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+> npm install axios
 
-### `npm test`
+#### Exceptional
+> npm install eslint --save-dev
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> npm install @material-ui/core
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You do not require to install @material-ui/core and eslintConfig dependancies if those are giving any error, you can remove or install them manually.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Now, you are one step behind to run the project.
+> npm start 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Your react will be running on the port 3000. 
+Enjoy !
 
-### `npm run eject`
+## Dictionary API
+***
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
++ Go back to your root directory where dictionary is located.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
++ Just below the dictionary directory just create a folder called directoryAPI.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Now, do **npm init** in the directoryAPI folder.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Now, we are going to add some dependancies,
+> npm install express --save
 
-## Learn More
+> npm install mongoose
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Install mongoDb compass if you are using the windows. Then create a database called dictionary and you are done.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Now, run this command 
+> node server.js
 
-### Code Splitting
+### This project is underconstruction. feel free to make changes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
