@@ -6,7 +6,7 @@ class FloatBtnPopup extends React.Component {
         console.log('add button clicked');
     }
     render() {
-        const { text, closePopup } = this.props;
+        const { closePopup } = this.props;
         return (<div className='popup'>
             <div className='popup_inner'>
                     <div className='popup-header'>
@@ -15,10 +15,10 @@ class FloatBtnPopup extends React.Component {
                     </div>
                     <hr />
                     <p>Word * </p>
-                        <input type='text' placeholder="Enter New Word..." className='' />
+                        <input type='text' placeholder="Enter New Word..." />
                     <p className="para">Fields marked * are mandatory</p>
                     <hr />
-                    <button className="add-btn"onClick={this.addToDB.bind(this)}>Add</button>
+                    <button className="add-btn" onClick={this.addToDB.bind(this)}>Add</button>
                 </div>
             </div>
         );
