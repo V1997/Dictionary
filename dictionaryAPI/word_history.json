@@ -1,0 +1,284 @@
+[
+  {
+    "word": "beautiful",
+    "entries": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Someone who is beautiful. Can be used as a term of address.",
+        "examples": [
+          "Hey, beautiful!"
+        ],
+        "pronunciation": "ˈbjuːtɪfəl"
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Attractive and possessing beauty.",
+        "examples": [
+          "Anyone who has ever met her thought she was absolutely beautiful."
+        ],
+        "pronunciation": "ˈbjuːtɪfəl"
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "(of the weather) Pleasant; clear.",
+        "examples": [
+          "It's beautiful outside, let's go for a walk."
+        ],
+        "pronunciation": "ˈbjuːtɪfəl"
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Well executed.",
+        "examples": [
+          "The skater performed a beautiful axel."
+        ],
+        "pronunciation": "ˈbjuːtɪfəl"
+      }
+    ],
+    "totalEntries": 4,
+    "timestamp": "2025-05-29T06:12:54.218Z",
+    "searchCount": 1
+  },
+  {
+    "word": "how",
+    "entries": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The means by which something is accomplished.",
+        "examples": [
+          "I am not interested in the why, but in the how."
+        ],
+        "pronunciation": "hæŏ"
+      },
+      {
+        "partOfSpeech": "adverb",
+        "definition": "To what degree.",
+        "examples": [
+          "How often do you practice?"
+        ],
+        "pronunciation": "hæŏ"
+      },
+      {
+        "partOfSpeech": "adverb",
+        "definition": "In what manner.",
+        "examples": [
+          "How do you solve this puzzle?"
+        ],
+        "pronunciation": "hæŏ"
+      },
+      {
+        "partOfSpeech": "adverb",
+        "definition": "In what state.",
+        "examples": [
+          "How are you?"
+        ],
+        "pronunciation": "hæŏ"
+      },
+      {
+        "partOfSpeech": "adverb",
+        "definition": "Used as a modifier to indicate surprise, delight, or other strong feelings in an exclamation.",
+        "examples": [
+          "How very interesting!"
+        ],
+        "pronunciation": "hæŏ"
+      },
+      {
+        "partOfSpeech": "conjunction",
+        "definition": "The manner or way that.",
+        "examples": [
+          "I remember how I solved this puzzle."
+        ],
+        "pronunciation": "hæŏ"
+      },
+      {
+        "partOfSpeech": "conjunction",
+        "definition": "That, the fact that, the way that.",
+        "examples": [],
+        "pronunciation": "hæŏ"
+      }
+    ],
+    "totalEntries": 7,
+    "timestamp": "2025-05-29T06:10:55.838Z",
+    "searchCount": 1
+  },
+  {
+    "word": "bold",
+    "entries": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A dwelling; habitation; building.",
+        "examples": [],
+        "pronunciation": "bəʊld"
+      }
+    ],
+    "totalEntries": 1,
+    "timestamp": "2025-05-29T06:10:48.277Z",
+    "searchCount": 1
+  },
+  {
+    "word": "audacious",
+    "entries": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Showing willingness to take bold risks; recklessly daring.",
+        "examples": [],
+        "pronunciation": "ɔːˈdeɪʃəs"
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Impudent.",
+        "examples": [],
+        "pronunciation": "ɔːˈdeɪʃəs"
+      }
+    ],
+    "totalEntries": 2,
+    "timestamp": "2025-05-29T06:13:18.582Z",
+    "searchCount": 3
+  },
+  {
+    "word": "hello",
+    "entries": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "\"Hello!\" or an equivalent greeting.",
+        "examples": [],
+        "pronunciation": "həˈləʊ"
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To greet with \"hello\".",
+        "examples": [],
+        "pronunciation": "həˈləʊ"
+      },
+      {
+        "partOfSpeech": "interjection",
+        "definition": "A greeting (salutation) said when meeting someone or acknowledging someone’s arrival or presence.",
+        "examples": [
+          "Hello, everyone."
+        ],
+        "pronunciation": "həˈləʊ"
+      },
+      {
+        "partOfSpeech": "interjection",
+        "definition": "A greeting used when answering the telephone.",
+        "examples": [
+          "Hello? How may I help you?"
+        ],
+        "pronunciation": "həˈləʊ"
+      },
+      {
+        "partOfSpeech": "interjection",
+        "definition": "A call for response if it is not clear if anyone is present or listening, or if a telephone conversation may have been disconnected.",
+        "examples": [
+          "Hello? Is anyone there?"
+        ],
+        "pronunciation": "həˈləʊ"
+      },
+      {
+        "partOfSpeech": "interjection",
+        "definition": "Used sarcastically to imply that the person addressed or referred to has done something the speaker or writer considers to be foolish.",
+        "examples": [
+          "You just tried to start your car with your cell phone. Hello?"
+        ],
+        "pronunciation": "həˈləʊ"
+      },
+      {
+        "partOfSpeech": "interjection",
+        "definition": "An expression of puzzlement or discovery.",
+        "examples": [
+          "Hello! What’s going on here?"
+        ],
+        "pronunciation": "həˈləʊ"
+      }
+    ],
+    "totalEntries": 7,
+    "timestamp": "2025-05-29T06:07:31.485Z",
+    "searchCount": 1
+  },
+  {
+    "word": "test",
+    "entries": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A challenge, trial.",
+        "examples": [],
+        "pronunciation": "test"
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A cupel or cupelling hearth in which precious metals are melted for trial and refinement.",
+        "examples": [],
+        "pronunciation": "test"
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "(academia) An examination, given often during the academic term.",
+        "examples": [],
+        "pronunciation": "test"
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A session in which a product or piece of equipment is examined under everyday or extreme conditions to evaluate its durability, etc.",
+        "examples": [],
+        "pronunciation": "test"
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "(normally “Test”) A Test match.",
+        "examples": [],
+        "pronunciation": "test"
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "The external calciferous shell, or endoskeleton, of an echinoderm, e.g. sand dollars and sea urchins.",
+        "examples": [],
+        "pronunciation": "test"
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "Testa; seed coat.",
+        "examples": [],
+        "pronunciation": "test"
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "Judgment; distinction; discrimination.",
+        "examples": [],
+        "pronunciation": "test"
+      }
+    ],
+    "totalEntries": 15,
+    "timestamp": "2025-05-29T06:06:35.967Z",
+    "searchCount": 1
+  },
+  {
+    "word": "food",
+    "entries": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Any solid substance that can be consumed by living organisms, especially by eating, in order to sustain life.",
+        "examples": [
+          "The innkeeper brought them food and drink."
+        ],
+        "pronunciation": "fuːd"
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A foodstuff.",
+        "examples": [],
+        "pronunciation": "fuːd"
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "Anything that nourishes or sustains.",
+        "examples": [
+          "Mozart and Bach are food for my soul."
+        ],
+        "pronunciation": "fuːd"
+      }
+    ],
+    "totalEntries": 3,
+    "timestamp": "2025-05-29T06:03:26.662Z",
+    "searchCount": 1
+  }
+]

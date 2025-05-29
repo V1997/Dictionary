@@ -1,55 +1,98 @@
-import React from 'react';
-import keyword from './keyword';
+import React, { useEffect, useState } from 'react';
+import { 
+    AppBar, 
+    Toolbar, 
+    Typography, 
+    Badge,
+    IconButton,
+    Tooltip 
+} from '@material-ui/core';
+import { 
+    MenuBook, 
+    Clear 
+} from '@material-ui/icons';
 import SearchBar from './SearchBar';
+import './Header.css';
 
-class Header extends React.Component {
-    // state = { images: [] };
-    constructor(props) {
-        super(props);
-        this.state = { term: ''};
-        this.onSearchSubmit = this.onSearchSubmit.bind(this);
-    }
+function Header({ onSearch, loading, wordCount, onClearAll }) {
+    const [isScrolled, setIsScrolled] = useState(false);
 
-    // constructor(props) {
-    //   super(props);
-    //   this.state = { apiResponse: "" };
-    // }
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.pageYOffset;
+            setIsScrolled(scrollTop > 10);
+        };
 
-    // callAPI() {
-        // fetch("http://localhost:8000/hello")
-        //     .then(res => res.text())
-        //     .then(res => this.setState({ apiResponse: res }))
-        //     .catch(err => console.log('vasu patel',err));
-    // }
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
-    // componentDidMount() {
-    //     this.callAPI();
-    // }
-
-    onSearchSubmit = async (term) => {
-        fetch(`http://localhost:8000/${term}`)
-            .then(res => res.text())
-            .then(res => this.setState({ apiResponse: res }))
-            .catch(err => console.log('vasu patel',err));
-        // const response = await keyword.get(`${term}`)
-        // .then(response => console.log('data has been gotten', response))
-        // .catch(err => console.log('something went wrong', err));
-        // this.setState({ images: response.data.results });
+    const handleSearchSubmit = (term) => {
+        if (onSearch) {
+            onSearch(term);
+        }
     };
-    render() {
-        return (
-            <div className="header">
-                <div className="vocab-heading">
-                    <h1>Vocab</h1>
-                    {/* <input type="text" className="search" placeholder="search" name="search" value="" /> */}
-                    <SearchBar onSubmit={this.onSearchSubmit} />
+
+    const handleClearAll = () => {
+        if (wordCount > 0 && onClearAll) {
+            const confirmed = window.confirm(`Are you sure you want to clear all ${wordCount} words from your list?`);
+            if (confirmed) {
+                onClearAll();
+            }
+        }
+    };    return (
+        <AppBar position="static" className={`header ${isScrolled ? 'scrolled' : ''}`} elevation={0}>
+            <Toolbar>
+                <div className="header-content">
+                    <div className="vocab-heading">
+                        <Tooltip title="Your Personal Dictionary" placement="bottom">
+                            <MenuBook className="vocab-icon" />
+                        </Tooltip>
+                        <Typography variant="h4" component="h1" className="vocab-title">
+                            Dictionary
+                        </Typography>
+                        <SearchBar 
+                            onSubmit={handleSearchSubmit} 
+                            loading={loading}
+                        />
+                    </div>                    <div className="header-actions">
+                        <Tooltip 
+                            title={wordCount === 0 ? "No words saved yet" : `You have ${wordCount} word${wordCount !== 1 ? 's' : ''} in your collection`}
+                            placement="bottom"
+                        >
+                            <div className="word-counter">
+                                <Badge 
+                                    badgeContent={wordCount} 
+                                    color="secondary" 
+                                    className="word-count-badge"
+                                    max={999}
+                                    showZero={true}
+                                >
+                                    <Typography variant="h6" className="wordlist-heading">
+                                        My Collection
+                                    </Typography>
+                                </Badge>
+                            </div>
+                        </Tooltip>
+                        
+                        {wordCount > 0 && (
+                            <Tooltip title={`Clear all ${wordCount} word${wordCount !== 1 ? 's' : ''} from your collection`} placement="bottom">
+                                <IconButton 
+                                    color="inherit" 
+                                    onClick={handleClearAll}
+                                    className="clear-button"
+                                    size="medium"
+                                    aria-label={`Clear all ${wordCount} words`}
+                                >
+                                    <Clear />
+                                </IconButton>
+                            </Tooltip>
+                        )}
+                    </div>
                 </div>
-                <div className="wordlist-heading">
-                    <h3>Words List</h3>
-                </div>
-            </div>
-        )
-    }
+            </Toolbar>
+        </AppBar>
+    );
 }
 
 export default Header;

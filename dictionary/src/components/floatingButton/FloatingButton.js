@@ -1,37 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import FloatBtnPopup from './FloatBtnPopup';
+import './FloatingButton.css';
 
-class FloatingButton extends React.Component {
+const FloatingButton = ({ onSearch }) => {
+    const [popup, setPopup] = useState(false);
 
-    constructor(props) {
-        super(props);
-        this.state = {
-          popup: false,
-        };
-        this.togglePopup = this.togglePopup.bind(this);
-    }
-
-    togglePopup() {
-      this.setState({
-        popup: !this.state.popup
-      });
-    }
-  
-    
-    render() {
-    return (
-            <div className="App">
-                <button className="floating-btn" onClick={this.togglePopup}>
-                    +
-                </button>
-                { this.state.popup ?  
-                  <FloatBtnPopup closePopup={ this.togglePopup }
-                  />
-                  : null
-                }
-            </div>
-        );
+    const togglePopup = () => {
+        setPopup(!popup);
     };
-}
+
+    return (
+        <div className="floating-button-container">
+            <button className="floating-btn" onClick={togglePopup}>
+                +
+            </button>
+            {popup && (
+                <FloatBtnPopup 
+                    closePopup={togglePopup}
+                    onSearch={onSearch}
+                />
+            )}
+        </div>
+    );
+};
 
 export default FloatingButton;
